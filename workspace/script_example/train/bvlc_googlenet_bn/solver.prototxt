@@ -1,0 +1,17 @@
+net: "workspace/train_bird/script/train/bvlc_googlenet_bn/train_val.prototxt"
+test_iter: 363
+test_interval: 188
+test_initialization: false
+display: 40
+iter_size: 4
+#average_loss: 40
+base_lr: 0.0045
+lr_policy: "step"
+stepsize: 7520
+gamma: 0.96
+max_iter: 7520
+momentum: 0.9
+weight_decay: 0.0002
+snapshot: 10000
+snapshot_prefix: "workspace/train_bird/snapshot/bvlc_googlenet_bn/snapshot"
+solver_mode: GPU

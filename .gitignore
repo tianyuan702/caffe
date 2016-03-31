@@ -1,5 +1,7 @@
 ## General
 
+workspace/train_*
+
 # Compiled Object files
 *.slo
 *.lo

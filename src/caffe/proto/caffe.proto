@@ -396,6 +396,13 @@ message LayerParameter {
   optional ThresholdParameter threshold_param = 128;
   optional TileParameter tile_param = 138;
   optional WindowDataParameter window_data_param = 129;
+  optional FeatureSelectParameter feature_select_param = 145;
+}
+
+message FeatureSelectParameter {
+  optional int32 add_size = 1 [default = 50];
+  optional int32 feature_size = 2 [default = 1000];
+  optional int32 update_interval = 3 [default = 5];
 }
 
 // Message that stores parameters used to apply transformation
